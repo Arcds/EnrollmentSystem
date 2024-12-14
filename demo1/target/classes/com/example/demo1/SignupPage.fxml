@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo1.SignupPageController">
+   <children>
+      <!-- Submit Button -->
+      <Button layoutX="438.0" layoutY="306.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+
+      <!-- First Name -->
+      <TextField fx:id="firstname" layoutX="71.0" layoutY="89.0" promptText="First Name" />
+
+      <!-- Last Name -->
+      <TextField fx:id="lastname" layoutX="71.0" layoutY="131.0" promptText="Last Name" />
+
+      <!-- Email -->
+      <TextField fx:id="email" layoutX="71.0" layoutY="174.0" promptText="Email" />
+
+      <!-- Password -->
+      <PasswordField fx:id="password" layoutX="71.0" layoutY="220.0" promptText="Password" />
+
+      <!-- Date of Birth -->
+      <DatePicker fx:id="dob" layoutX="279.0" layoutY="89.0" promptText="Date of Birth" />
+
+      <!-- Gender ComboBox -->
+      <ComboBox fx:id="gender" layoutX="279.0" layoutY="131.0" promptText="Gender">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="M" />
+               <String fx:value="F" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+      <!-- Address -->
+      <TextField fx:id="address" layoutX="279.0" layoutY="174.0" promptText="Address" />
+
+      <!-- Contact Number -->
+      <TextField fx:id="contactNumber" layoutX="279.0" layoutY="220.0" promptText="Contact Number" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+.landing-page-bg{
+    -fx-background-image: url("../Images/chillguy.jpg");      /* Path to your image */
+    -fx-background-size: cover;                               /* To cover the entire VBox */
+    -fx-background-repeat: no-repeat;                         /* Prevents repeating */
+    -fx-background-position: center center;                   /* Center the image */
+}
+
+.menu-buttons {
+    -fx-background-color: #3333cc;
+}
